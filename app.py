@@ -11,7 +11,8 @@ driver = webdriver.Chrome(driver_path)
 def search_address_on_site(address):
 try:
 # Open the Find People Search website
-driver.get("https://www.findpeoplesearch.com/&quot;)<br/>
+driver.get("https://www.findpeoplesearch.com/")
+
 # Locate the search box and input the address
 search_box = driver.find_element(By.NAME, "q") # Replace 'q' with the actual search box name or ID
 search_box.clear()
